@@ -1,51 +1,66 @@
-# Welcome to your Expo app 👋
+# 🚀 Template de Login em React Native  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um **template de login** para aplicativos React Native, utilizando **Expo**, **TypeScript**, e **Firebase**. Este template serve como ponto de partida para implementar autenticação em seus projetos móveis.  
 
-## Get started
+---
 
-1. Install dependencies
+## 🛠️ Tecnologias Utilizadas  
+- **React Native**  
+- **Expo**  
+- **TypeScript**  
+- **Firebase (Authentication e Firestore)**  
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 📋 Funcionalidades  
+- Tela de **login** e **cadastro**.  
+- Autenticação com **email e senha**.  
+- Validação de campos usando **React Hook Form** e **Yup**.  
+- Integração com o **Firebase Authentication**.  
+- Banco de dados no **Firestore** para armazenar informações do usuário (exemplo incluído).  
+- Navegação com **React Navigation**.  
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🔧 Pré-requisitos  
+Antes de começar, você precisará ter instalado:  
+- [Node.js](https://nodejs.org/)  
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)  
+- Conta no [Firebase](https://firebase.google.com/)  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Como usar  
 
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone o repositório:  
+```bash
+git clone git@github.com:en20/ReactNative-Login-Firebase-Template.git
+cd ReactNative-Login-Firebase-Template`
+```
+### 2. Instale as Dependências:  
+```bash
+npm install`
+```
+### 3. Configure o Firebase:
+- Crie um projeto no Firebase Console.
+- Habilite o Authentication com o método Email/Password.
+- Crie um banco de dados Firestore (modo de teste).
+- Adicione o arquivo firebaseConfig.ts na pasta src/config, contendo suas credenciais:
 
 ```bash
-npm run reset-project
+export const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_AUTH_DOMAIN",
+  projectId: "SEU_PROJECT_ID",
+  storageBucket: "SEU_STORAGE_BUCKET",
+  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+  appId: "SEU_APP_ID",
+};
+```
+### 4. Execute o aplicativo mobile:
+```bash
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# ReactNative-Login-Firebase-Template
